@@ -1,4 +1,4 @@
-import glob,re
+import glob,re,os
 import argparse
 
 '''
@@ -15,7 +15,8 @@ args = parser.parse_args()
 vcf_path = args.input
 tab_path = args.output
 
-
+if not os.path.exists(tab_path):
+    os.mkdir(tab_path)
 
 
 def vep_vcf2tab(vcf, tab):
