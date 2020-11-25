@@ -1,0 +1,1 @@
+This folder runs the tools that prioritize variants by combining HPO term.
